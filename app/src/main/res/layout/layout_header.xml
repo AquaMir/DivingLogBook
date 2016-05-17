@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:background="#3366FF">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:stretchColumns="0">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name"
+                android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:id="@+id/name"/>
+            <Button
+                android:id="@+id/nav_set"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_setting_light"
+                android:background="@drawable/mir_btn" />
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_licence"
+                android:id="@+id/licence"
+                android:layout_span="2" />
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_licence_no"
+                android:id="@+id/licence_no"
+                android:layout_span="2" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:stretchColumns="1">
+        <TableRow>
+            <Button android:id="@+id/nav_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                android:background="@drawable/mir_btn"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <Button android:id="@+id/nav_log"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@android:drawable/ic_menu_agenda"
+                android:background="@drawable/mir_btn"
+                android:text="다이빙 로그" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

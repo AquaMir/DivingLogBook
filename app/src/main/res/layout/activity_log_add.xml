@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/back"
+        android:scrollbars="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:stretchColumns="1,3">
+            <TableRow>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:text="Location"
+                    android:id="@+id/txtLocation"
+                    android:layout_column="0" android:layout_span="5" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="포인트 명"/>
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:id="@+id/point" android:layout_span="4"  />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="국가, 도시"/>
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:id="@+id/country" android:layout_span="4" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="입수 일,시"/>
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDate"
+                    android:editable="false" />
+                <Button
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:text="달력"
+                    android:background="@drawable/mir_btn"
+                    android:id="@+id/btnDate" />
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTime"
+                    android:editable="false"  />
+                <Button
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:text="시계"
+                    android:background="@drawable/mir_btn"
+                    android:id="@+id/btnTime" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:stretchColumns="1">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:text="Diver"
+                    android:id="@+id/txtDiver"
+                    android:layout_column="0" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="버디"/>
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:id="@+id/buddy"
+                    android:layout_column="1" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="가이드"/>
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:id="@+id/guide"
+                    android:layout_column="1" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="강사"/>
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:id="@+id/instructor"
+                    android:layout_column="1" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:stretchColumns="1,4">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:text="Dive Info"
+                    android:id="@+id/txtInfo"
+                    android:layout_column="0" android:layout_span="6" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="시작 공기량"
+                    android:layout_width="wrap_content"/>
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/startAir"
+                    android:text="200"
+                    android:layout_column="1" />
+                <TextView
+                    android:text="bar"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:text="잔여 공기량"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp" />
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/endAir"
+                    android:layout_column="1"
+                    android:text="100" />
+                <TextView
+                    android:text="bar"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Weights"/>
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/weight"
+                    android:text="4"
+                    android:layout_column="1" />
+                <TextView
+                    android:text="kg"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:text="시야"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp" />
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/visibility"
+                    android:layout_column="1"
+                    android:text="20" />
+                <TextView
+                    android:text="m"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="기온"/>
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/airTemp"
+                    android:text="28" />
+                <TextView
+                    android:text="ºC"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:text="수온"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp" />
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/waterTemp"
+                    android:text="28" />
+                <TextView
+                    android:text="ºC"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="휴계시간"/>
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/surfTime"
+                    android:hint="00:00"/>
+                <TextView android:text=""/>
+                <TextView android:text="다이빙시간"
+                    android:paddingLeft="10dp" />
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/diveTime"
+                    android:layout_column="1" />
+                <TextView
+                    android:text="min"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="최대 수심"/>
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/maxDepth"/>
+                <TextView
+                    android:text="m"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:text="평균 수심"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp" />
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/avgDepth" />
+                <TextView
+                    android:text="m"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="안전정지"/>
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/safeDepth"
+                    android:text="5"/>
+                <TextView
+                    android:text="m"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:text="정지 시간"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp" />
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/safeTime"
+                    android:text="5" />
+                <TextView
+                    android:text="min"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Note"/>
+                <EditText
+                    style="@style/editTxt"
+                    android:id="@+id/comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="5"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:minWidth="10.0dip"
+                    android:maxWidth="5.0dip"
+                    android:layout_span="5"/>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:stretchColumns="1,2,3">
+            <TableRow>
+                <TextView android:text="Dive Type"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="보트다이빙"
+                    android:id="@+id/boat" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비치다이빙"
+                    android:id="@+id/beach" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wall"
+                    android:id="@+id/wall" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text=""/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동굴"
+                    android:id="@+id/cave" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="난파선"
+                    android:id="@+id/ship" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="야간"
+                    android:id="@+id/night" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="스킨 장비"/>
+                <RadioGroup
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wet 슈트"
+                        android:id="@+id/wet" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dry 슈트"
+                        android:id="@+id/dry" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="캐쥬얼"
+                        android:id="@+id/none" />
+                </RadioGroup>
+                <TextView
+                    android:text="슈트 두께"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp" />
+                <EditText
+                    style="@style/editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:id="@+id/thick"
+                    android:text="2.5" />
+                <TextView
+                    android:text="mm"
+                    android:layout_width="wrap_content"/>
+            </TableRow>
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="취소"
+                android:background="@drawable/mir_btn"
+                android:id="@+id/btnCancel" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="저장하기"
+                android:background="@drawable/mir_btn"
+                android:id="@+id/btnSave" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</ScrollView>

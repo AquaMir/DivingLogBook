@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DivingLogBook</string>
+
+    <string name="navigation_drawer_open">메뉴 열기</string>
+    <string name="navigation_drawer_close">메뉴 닫기</string>
+
+    <string name="action_settings">내 정보 설정</string>
+    <string name="action_write">로그 작성</string>
+    <string name="action_map">지도 로그</string>
+
+    <string name="user_name">FUN Diver</string>
+    <string name="user_licence">PADI Open Water</string>
+    <string name="user_licence_no">0000000000</string>
+    <string name="title_activity_gmap">Map</string>
+</resources>

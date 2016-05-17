@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2"
+        android:layout_margin="7dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:text="3"
+                android:id="@+id/listId"
+                android:layout_width="50dp"
+                android:paddingLeft="10dp" />
+            <TextView
+                android:text="LauLau"
+                android:id="@+id/listPoint"
+                android:layout_width="150dp"
+                android:paddingLeft="10dp" />
+            <TextView
+                android:text="Saipan"
+                android:id="@+id/listCountry"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp" />
+        </TableRow>
+    </TableLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF" />
+</LinearLayout>
